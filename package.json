@@ -1,0 +1,29 @@
+{
+  "name": "cypher_crm_server",
+  "version": "1.0.0",
+  "description": "this server is meant to handle Cypher crm activities",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "forever": "forever start server.js --minUptime=2000ms --spinSleepTime=5000ms",
+    "list": "forever list",
+    "stop": "forever stopall",
+    "lt": "lt --port 8001"
+  },
+  "author": "eximine",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4",
+    "number-to-words": "^1.2.4",
+    "pdf-creator-node": "^2.3.5",
+    "pg": "^8.11.1"
+  },
+  "devDependencies": {
+    "ngrok": "^5.0.0-beta.2",
+    "nodemon": "^2.0.22"
+  }
+}
